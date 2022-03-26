@@ -3,6 +3,6 @@
 
 #include "data.h"
 
-void muon_sach(book &hire, phieu_muon &cu);
+void muon_sach(Sach &hire, phieu_muon &cu);
 
 #endif

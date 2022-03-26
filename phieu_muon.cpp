@@ -23,6 +23,6 @@ void output_phieuMuon(const phieu_muon &a)
     std::cout << std::left << std::setw(25) << "\n\tten sach" <<": "<< a.phieu.name << '\n';
     std::cout << std::left << std::setw(25) << "\n\tten tac gia" <<": "<< a.phieu.author << '\n';
     std::cout << std::left << std::setw(25) << "\n\tma sach" <<": "<< a.phieu.code << '\n';
-    std::cout << std::left << std::setw(25) << "\n\tso luong sach muon" <<": "<< a.soluong << '\n';
+    std::cout << std::left << std::setw(25) << "\n\tso luong Sach muon" <<": "<< a.soluong << '\n';
     std::cout << std::left << std::setw(25) << "\n\tma muon sach" <<": "<< a.code_muon << "\n\n";
 }

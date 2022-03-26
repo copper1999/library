@@ -2,11 +2,13 @@
 #include "library.h"
 #include "data.h"
 #include "book.h"
+#include "sach.h"
 
+void printTest();
 int main()
 {
-   //   system("cls");
-   book a;
+     system("cls");
+   Sach a;
    do
    {
      char action='y';
@@ -19,5 +21,8 @@ int main()
      }
      else break;
    } while (1);
-   
+   // Sach sach1("doanh");
+   // Sach sach2 = sach1;
+   // std::cout << sach2.getType() << '\n';
+
 }

@@ -15,7 +15,7 @@ enum
 void library()
 {
     phieu_muon a;
-    book b;
+    Sach b;
         bool c=true;
         int options = 0;
         std::cout << "lua chon thao tac :" << '\n'
@@ -39,14 +39,14 @@ void library()
         }
         case E_MUON_SACH:
         {
-            std::cout << "*|:=> bat dau thuc hien muon sach <=: *\n"
+            std::cout << "*|:=> bat dau thuc hien muon Sach <=: *\n"
                       << '\n';
             muon_sach(b, a);
             break;
         }
         case E_TRA_SACH:
         {
-            std::cout << "*|:=> bat dau thuc hien tra sach <=: *\n"
+            std::cout << "*|:=> bat dau thuc hien tra Sach <=: *\n"
                       << '\n';
             tra_sach(a);
             break;

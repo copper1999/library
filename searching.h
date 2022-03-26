@@ -4,10 +4,10 @@
 #include "data.h"
 #include <string>
 
-std::string search(book a);
-std::string search_code(book a);
-std::string search_author(book a);
-std::string search_name(book a);
-std::string search_type(book a);
+std::string search(Sach a);
+std::string search_code(Sach a);
+std::string search_author(Sach a);
+std::string search_name(Sach a);
+std::string search_type(Sach a);
 
 #endif

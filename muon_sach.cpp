@@ -5,26 +5,28 @@
 #include "phieu_muon.h"
 #include "data.h"
 
-void muon_sach(book &hire, phieu_muon &cu)
+void muon_sach(Sach &hire, phieu_muon &cu)
 {
-    hire.code = search(hire);
+    hire.getCode() = search(hire);
     for (int i = 0; i < STORAGE; i++)
     {
-        if (hire.code == get_book(i).code)
+        if (hire.getCode() == get_Sach(i).getCode())
         {
-            std::cout << "\n\nnhap so luong sach muon muon:\t";
-            std::cin >> hire.num;
-            if (hire.num <= get_book(i).num && hire.num > 0)
+            int num;
+            std::cout << "\n\nnhap so luong Sach muon muon:\t";
+            std::cin >>num;
+            hire.setNum(num);
+            if (hire.getNum() <= get_Sach(i).getNum() && hire.getNum() > 0)
             {
                condition_input_codeMuon(cu);
-                set_book(i, hire);
-                cu.soluong = hire.num;
-                cu.phieu.author = get_book(i).author;
-                cu.phieu.type = get_book(i).type;
-                cu.phieu.name = get_book(i).name;
-                cu.phieu.code = get_book(i).code;
+                set_Sach(i, hire);
+                cu.soluong = hire.getNum();
+                cu.phieu.author = get_Sach(i).getAuthor();
+                cu.phieu.type = get_Sach(i).getType();
+                cu.phieu.name = get_Sach(i).getName();
+                cu.phieu.code = get_Sach(i).getCode();
                 output_phieuMuon(cu);
-                std::cout << "so luong sach con lai:\t" << get_book(i).num << "\n\n";
+                std::cout << "so luong Sach con lai:\t" << get_Sach(i).getNum() << "\n\n";
                 set_phieu_muon(i, cu);
             }
             else

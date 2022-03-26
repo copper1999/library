@@ -2,8 +2,8 @@
 #define _BOOK_H
 
 #include "struct.h"
-
-void output_book(const book &a);
-void print_book(const book &a,int index);
+#include "sach.h"
+void output_Sach(const Sach &a);
+void print_Sach(const Sach &a,int index);
 
 #endif
